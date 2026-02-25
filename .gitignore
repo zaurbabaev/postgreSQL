@@ -1,0 +1,17 @@
+# Logs
+*.log
+
+# Database dumps
+*.dump
+*.backup
+*.bak
+*.sql.bak
+
+# Postgres data directory
+pgdata/
+data/
+
+# OS files
+.DS_Store
+Thumbs.db
+.idea
