@@ -8,3 +8,4 @@ CREATE TABLE company_storage.company
     name VARCHAR(128),
     date DATE
 )
+
