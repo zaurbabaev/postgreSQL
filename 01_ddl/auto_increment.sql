@@ -44,6 +44,15 @@ CREATE TABLE employee
     salary     INTEGER
 );
 
+DROP TABLE employee;
+
+CREATE TABLE employee(
+    id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY ,
+    first_name VARCHAR(128) NOT NULL ,
+    last_name VARCHAR(128) NOT NULL ,
+    salary INTEGER,
+    UNIQUE (first_name, last_name)
+);
 
 INSERT INTO employee(first_name, last_name, salary)
 VALUES ('Ivan', 'Ivanov', 1000),
@@ -52,3 +61,4 @@ VALUES ('Ivan', 'Ivanov', 1000),
 
 SELECT *
 FROM employee;
+
