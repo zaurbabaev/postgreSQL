@@ -46,11 +46,12 @@ CREATE TABLE employee
 
 DROP TABLE employee;
 
-CREATE TABLE employee(
-    id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY ,
-    first_name VARCHAR(128) NOT NULL ,
-    last_name VARCHAR(128) NOT NULL ,
-    salary INTEGER,
+CREATE TABLE employee
+(
+    id         INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    first_name VARCHAR(128) NOT NULL,
+    last_name  VARCHAR(128) NOT NULL,
+    salary     INTEGER,
     UNIQUE (first_name, last_name)
 );
 
