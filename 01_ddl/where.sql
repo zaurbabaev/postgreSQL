@@ -83,5 +83,5 @@ SELECT id,
        salary
 FROM employee
 WHERE salary IN (1000, 1100, 2000)
-   OR first_name LIKE 'Iv%'; 
+   OR first_name LIKE 'Iv%';
 
