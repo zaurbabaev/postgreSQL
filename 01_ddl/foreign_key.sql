@@ -31,7 +31,7 @@ VALUES ('Ivan', 'Sidrov', 500, (SELECT id FROM company WHERE name = 'Google')),
        ('Arni', 'Paramonov', NULL, (SELECT id FROM company WHERE name = 'Google'));
 
 
-/*Query selector istifadə etməklə company_name-nin gətirilməsi*/
+/*Subquery istifadə etməklə company_name-nin gətirilməsi*/
 SELECT id,
        first_name,
        last_name,
