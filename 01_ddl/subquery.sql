@@ -54,5 +54,7 @@ SELECT first_name AS name,
 FROM employee;
 
 
-
+SELECT *
+FROM employee
+WHERE company_id IN (SELECT company.id FROM company WHERE founded_date > '2000-01-01');
 
