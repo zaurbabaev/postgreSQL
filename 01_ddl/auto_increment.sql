@@ -28,7 +28,6 @@ CREATE TABLE company
     founded_date DATE CHECK ( founded_date > '1995-01-01' AND founded_date < '2020-01-01')
 );
 
-DROP TABLE company;
 
 INSERT INTO company (name, founded_date)
 VALUES ('Google', '2001-01-01'),
